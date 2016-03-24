@@ -4,10 +4,12 @@ import Prelude (Unit, unit, ($), (++), void, bind, pure)
 
 import Data.Maybe (Maybe(..))
 import Data.Function (Fn3, runFn3)
+
 import Control.Monad.Eff (Eff)
+import Debug.Trace (trace)
+
 import DOM (DOM)
 import DOM.Node.Types (Node())
-import Debug.Trace (trace)
 
 tryWithNode :: forall eff a. String -> (Node -> Eff ( dom :: DOM | eff ) a ) -> Eff ( dom :: DOM | eff ) Unit
 tryWithNode divName fun = do
