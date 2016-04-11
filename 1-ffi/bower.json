@@ -17,6 +17,6 @@
   ],
   "dependencies": {
     "purescript-debug" : "*",
-    "purescript-dygraphs":"git://github.com/clayrat/purescript-dygraphs.git#80d36df868b45d8ce48e9936065f7103150ab524"
+    "purescript-dygraphs":"fluffynukeit/purescript-dygraphs"
   }
 }
